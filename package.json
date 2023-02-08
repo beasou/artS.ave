@@ -1,0 +1,11 @@
+{
+  "name": "artS.ave",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/beasou/artS.ave.git",
+  "author": "beasou <beatrizreginasouza1@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
