@@ -1,10 +1,12 @@
 const express = require("express");
 const app = express();
 const data = require("./data.json");
+const cors = require('cors')
 
 app.use(express.json());
+app.use(cors());
 
-app.get("/links", function (request, response) {
+app.get("/", function (request, response) {
   return response.json(data);
 });
 
@@ -36,6 +38,12 @@ app.delete("/links/:id", function (request, response) {
     const linksFiltered = data.filter(link => link.id != id);
     response.json(linksFiltered);
 });
+
+
+//==========================================
+
+//-------------------------------------------------
+
 
 app.listen(3003, function () {
   console.log("Server is running");

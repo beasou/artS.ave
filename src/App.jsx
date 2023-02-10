@@ -2,7 +2,19 @@ import styles from "./App.module.css";
 import { Header } from "./components/Header";
 import "./global.css";
 
+import { useEffect, useState } from "react";
+
 function App() {
+  
+  const [links, setLinks] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3003/")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data.articles);
+      });
+  }, []);
+
   return (
     <>
       <Header />
@@ -15,9 +27,16 @@ function App() {
             value=""
             placeholder="https://exemple.com"
           />
+          <p>Título do artigo</p>
+          <input
+            type="text"
+            name="nome"
+            value=""
+            placeholder="Digite o titulo aqui"
+          />
         </div>
 
-        <button>Salvar</button>
+        <button type="submit">Salvar</button>
       </div>
       <p className={styles.linkSave}>
         <a href="#">Clique aqui para visualizar os links salvos</a>
