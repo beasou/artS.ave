@@ -8,8 +8,9 @@
     --gray-800: #202024;
     --gray-900: #121214;
 
-    --magenta-200: #F4C80F;
-    --magenta-700: #C69312;
+    --yellow-100:#EFB054;
+    --yellow-200: #F4C80F;
+    --yellow-700: #C69312;
 }
 
 *{
@@ -31,11 +32,11 @@ body, input, textarea, button {
 }
 
 a{
-    color: var(--magenta-700);
+    color: var(--yellow-700);
     text-decoration: none;
 }
 
 a:hover{
-    color:var(--magenta-200);
+    color:var(--yellow-200);
     font-style: italic;
 }

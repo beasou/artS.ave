@@ -5,7 +5,7 @@ const data = require("./data.json");
 app.use(express.json());
 
 app.get("/links", function (request, response) {
-  response.json(data);
+  return response.json(data);
 });
 
 app.get("/links/:id", function (request, response) {
