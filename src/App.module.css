@@ -1,20 +1,49 @@
-.wrapper{
+.wrapper {
   max-width: 70rem; /*width somtorio em px 832+32+256 = 1120px /16 = 70rem*/
   margin: 2rem auto; /*2rem cima e baixo, laterais auto*/
-  padding: 0 1rem;/*caso a tela diminua o conteudo não fique colado*/
-  
+  padding: 0 1rem; /*caso a tela diminua o conteudo não fique colado*/
+
   display: grid;
   grid-template-columns: 1fr 256px;
   gap: 2rem;
   align-items: flex-start;
 }
 
-.linkSave{
+.linkSave {
   display: flex;
   align-items: center;
   justify-content: center;
 
   padding: 3rem;
+}
 
+.article{
+  max-width: 50rem; /*width somtorio em px 832+32+256 = 1120px /16 = 70rem*/
+  margin: 2rem auto; /*2rem cima e baixo, laterais auto*/
+  padding: 0 1rem; /*caso a tela diminua o conteudo não fique colado*/
+}
+h1 {
+  color: var(--yellow-200);
+}
+hr{
+  border-color: var(--yellow-200);
+  margin-bottom: .5rem;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+ 
+}
+img {
+  
+  height: 1.2rem;
+  margin-left: 0.75rem;
+}
 
+strong {
+
+  margin-right: 1rem;
+  
 }
