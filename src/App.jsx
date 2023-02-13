@@ -5,10 +5,34 @@ import trash from "./assets/trash.svg";
 import "./global.css";
 
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 function App() {
   const [links, setLinks] = useState([]);
+  const [titleArticle, setTitleArticle] = useState("");
+  const [linkArticle, setLinkArticle] = useState("");
+
   useEffect(() => {
+    /**
+     * A Promisse pode ser consumida de duas formas
+     * 
+     * ex 1: 
+     * promiseFunction()
+     *   .then(callback)
+     *   .catch(callback)
+     * 
+     * ou também pode ser utilziado "async" "await"
+     * 
+     * ex 2:
+     * 
+     * try {
+     *   const resultado = await promiseFunction();
+     * } catch (error) {
+     *    // tratar erros
+     * }
+     * 
+     */
+
     fetch("http://localhost:3003/")
       .then((response) => response.json())
       .then((data) => {
@@ -16,29 +40,50 @@ function App() {
       });
   }, []);
 
+  function handleSubmitLink() {
+    /**
+     * axios é uma biblioteca que realizar requesições HTTP
+     * utilizando os diversos verbos, são eles (GET, POST, DELETE, PUT e outros)
+     * O axios trabalha se reproduzindo como uma Promisse
+     */
+    axios.post('http://localhost:3003/links', {
+    titleArticle,
+    linkArticle,
+    })
+      .then((response) => { console.log(response)})
+      .catch((error) => { console.error(`Erro ao realizar requisição: ${error}`)})
+    console.log("Passei aqui")
+    console.log(titleArticle)
+    console.log(linkArticle)
+
+  }
+
+
+
   return (
     <>
       <Header />
-      <div className={styles.wrapper}>
+      <form className={styles.wrapper} onSubmit={handleSubmitLink}>
         <div>
-          <p>Digite seu link aqui</p>
+          <label>Digite seu link aqui</label>
           <input
             type="text"
-            name="nome"
-            value=""
             placeholder="https://exemple.com"
+            onChange={(element) => setLinkArticle(element.target.value)}
           />
           <p>Título do artigo</p>
           <input
             type="text"
-            name="nome"
-            value=""
             placeholder="Digite o titulo aqui"
+            onChange={(element) => setTitleArticle(element.target.value)}
           />
         </div>
 
-        <button type="submit">Salvar</button>
-      </div>
+        <button type="submit" onClick={handleSubmitLink}>
+          Salvar
+        </button>
+      </form>
+
       <p className={styles.linkSave}>
         <a href="#">Clique aqui para visualizar os links salvos</a>
       </p>
