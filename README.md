@@ -32,4 +32,4 @@ Para instalar as dependências e iniciar o servidor:
 [] Acessar o diretório `~ cd/arts.save.frontened`
 [] Instalar as dependências `~ npm install`
 [] Iniciar o projeto `npm init -y`
-[] Executar o projeto `npm run devt`
+[] Executar o projeto `npm run dev`
