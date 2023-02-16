@@ -7,15 +7,15 @@
 No diretório _art.ave.backend_ temos a API.
 
 ### Dependências
-*express* = Para a criação da API
-*cors* = Para ter acesso da pagina para o servidor;
-*nodemon* = Fica ouvindo o servidor, podendo fazer mudanças sem parar o servidor;
+- *express* = Para a criação da API
+- *cors* = Para ter acesso da pagina para o servidor;
+- *nodemon* = Fica ouvindo o servidor, podendo fazer mudanças sem parar o servidor;
 
 Para instalar as dependências e iniciar o servidor:
-[] Acessar o diretório `~ cd/art.ave.backend`
-[] Instalar as dependências `npm install`
-[] Iniciar o servidor `npm init -y`
-[] Executar o servidor `npm start`
+- Acessar o diretório `~ cd/art.ave.backend`
+- Instalar as dependências `npm install`
+- Iniciar o servidor `npm init -y`
+- Executar o servidor `npm start`
 
 Está ouvindo na porta 3003 _listen(3003)_
 *http://localhost:3003/links*
@@ -24,14 +24,14 @@ Está ouvindo na porta 3003 _listen(3003)_
 ## Front-End
 No diretório _arts.save.frontend_ temos a o sistema, realizado em react.
 
-### Dependências npm install uuid
-*uuid* = Gerador de ID; 
-*eslint* = Para padronizar o codigo;
-*typescript* = Para realizar a tipagem;
-*vite* = Para criar o projeto em react;
+### Dependências 
+- *uuid* = Gerador de ID; 
+- *eslint* = Para padronizar o codigo;
+- *typescript* = Para realizar a tipagem;
+- *vite* = Para criar o projeto em react;
 
 Para instalar as dependências e iniciar o servidor:
-[] Acessar o diretório `~ cd/arts.save.frontened`
-[] Instalar as dependências `~ npm install`
-[] Iniciar o projeto `npm init -y`
-[] Executar o projeto `npm run dev`
+- Acessar o diretório `~ cd/arts.save.frontened`
+- Instalar as dependências `~ npm install`
+- Iniciar o projeto `npm init -y`
+- Executar o projeto `npm run dev`
