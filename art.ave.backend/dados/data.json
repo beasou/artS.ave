@@ -12,18 +12,18 @@
     },
     {
       "id": 3,
-      "URL": "https://devnology.com.br/",
-      "titulo": "Devnology"
+      "URL": "https://pt-br.reactjs.org/docs/getting-started.html#learn-react",
+      "titulo": "Aprenda React"
     },
     {
       "id": 4,
-      "URL": "https://devnology.com.br/",
-      "titulo": "Devnology"
+      "URL": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript",
+      "titulo": "JavaScript"
     },
     {
       "id": 5,
-      "URL": "https://devnology.com.br/",
-      "titulo": "Devnology"
+      "URL": "https://getbootstrap.com/docs/5.3/customize/overview/",
+      "titulo": "Customize"
     }
   ]
 }
