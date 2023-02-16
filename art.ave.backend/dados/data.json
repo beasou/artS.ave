@@ -1,0 +1,29 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "URL": "https://www.google.com/",
+      "titulo": "Google"
+    },
+    {
+      "id": 2,
+      "URL": "https://devnology.com.br/",
+      "titulo": "Devnology"
+    },
+    {
+      "id": 3,
+      "URL": "https://devnology.com.br/",
+      "titulo": "Devnology"
+    },
+    {
+      "id": 4,
+      "URL": "https://devnology.com.br/",
+      "titulo": "Devnology"
+    },
+    {
+      "id": 5,
+      "URL": "https://devnology.com.br/",
+      "titulo": "Devnology"
+    }
+  ]
+}

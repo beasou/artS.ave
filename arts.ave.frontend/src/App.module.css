@@ -1,0 +1,20 @@
+.body {
+  padding: 4rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.adicionarArtigo {
+  display: flex;
+  justify-content: end;
+}
+
+@media screen and (max-width: 500px) {
+  .body {
+    padding: 1.5rem;
+  }
+
+  .adicionarArtigo {
+    margin-bottom: 1rem;
+  }
+}
