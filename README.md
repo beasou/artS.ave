@@ -2,6 +2,8 @@
  ArtS.ave é um sistema para salvar links de artigos de tecnologia. 
 
 ![Peek 16-02-2023 17-38](https://user-images.githubusercontent.com/8356862/219483364-a188472c-ad63-456e-b927-e344b7e471b7.gif)
+![Peek 16-02-2023 17-42](https://user-images.githubusercontent.com/8356862/219483865-6711de6f-648e-45f8-b05f-0c3cc8131058.gif)
+
 
 ## Back-End
 No diretório _art.ave.backend_ temos a API.
